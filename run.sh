@@ -25,4 +25,4 @@ sync
 
 GID="$(id -g)"
 
-docker run -it -p 27017:27017 -p 27018:27018 --env PUID=$UID --env PGID=${GID} --rm ${PROXY_ARGS} -v ${WORK_DIR}:/config:rw javister-docker-docker.bintray.io/javister/javister-docker-mongo:3.6 $@
+docker run -it -p 27017:27017 -p 27018:27018 --env PUID=$UID --env PGID=${GID} --rm ${PROXY_ARGS} -v ${WORK_DIR}:/config:rw javister-docker-docker.bintray.io/javister/javister-docker-mongo:3.6-1 $@
